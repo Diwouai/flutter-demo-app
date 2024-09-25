@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class TMDBService {
-  final String apiKey = 'ec6d53f8c6e364ecee8e6df9d9382d56';
+  final String apiKey = 'YOUR_API_KEY';
   final String baseUrl = 'https://api.themoviedb.org/3';
 
   Future<List<dynamic>> fetchTrendingMovies() async {
