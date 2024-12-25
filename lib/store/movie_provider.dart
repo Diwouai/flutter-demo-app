@@ -27,7 +27,7 @@ class MovieProvider with ChangeNotifier {
       _trendingMovies = trending;
       _popularMovies = popular;
     } catch (e) {
-      print('Error fetching movies: $e');
+      debugPrint('Error fetching movies: $e');
     } finally {
       _isLoading = false;
       notifyListeners();
